@@ -6,26 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/dashboard.css">
 </head>
 <body>
     <nav class="side-nav">
-        <img src="/assets/logo.png" alt="">
-        <img src="/assets/overview.svg" alt="">
-        <img src="/assets/student.svg" alt="">
-        <img src="/assets/logout.svg" alt="">
+        <div class="first-flex">
+            <div class="side-icon-div">
+                <img src="/assets/logo.svg" alt="">
+            </div>
+            <div class="side-icon-div">
+                <img src="/assets/overview.svg" class="img" alt="">
+                <p>Overview</p>
+            </div>
+            <div class="side-icon-div">
+                <img src="/assets/student.svg" class="img" alt="">
+                <p>Student</p>
+            </div>
+        </div>
+        <div class="second-flex">
+            <a href="/index.html" class="side-icon-div">
+                <img src="/assets/logout.svg" class="img" alt="">
+                <p>Log Out</p>
+            </a>
+        </div>
     </nav>
     <nav class="top-nav">
+        <img src="/assets/logo.svg" class="logo" alt="">
         <h4>Good day, David</h4>
         <img src="/assets/Ellipse.png" alt="">
     </nav>
     <nav class="responsive-side-nav">
-        <img src="/assets/logo.png" alt="">
-        <img src="/assets/overview.svg" alt="">
-        <img src="/assets/student.svg" alt="">
-        <img src="/assets/logout.svg" alt="">
+        <div class="res-side-icon-div">
+            <img src="/assets/overview.svg" class="img" alt="">
+            <p>Overview</p>
+        </div>
+        <div class="res-side-icon-div">
+            <img src="/assets/student.svg" class="img" alt="">
+            <p>Student</p>
+        </div>
+        <a href="/index.html" class="res-side-icon-div">
+            <img src="/assets/logout.svg" class="img" alt="">
+            <p>Log Out</p>
+        </a>
     </nav>
     <div class="dashboard-body">
         <div class="language-cards">
@@ -54,7 +78,7 @@
                 <h4>Students</h4>
             </div>
             <div class="stack">
-                <img src="./assets/python.svg" class="python" alt="">
+                <img src="./assets/python.jpg" class="python" alt="">
                 <p>Python</p>
                 <h1>90</h1>
                 <h4>Students</h4>
