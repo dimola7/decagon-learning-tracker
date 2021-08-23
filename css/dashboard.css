@@ -3,6 +3,7 @@ body{
     background-color: #F4F6F8;
     margin: 0;
 }
+/* navbar starts */
 .top-nav{
     display: flex;
     gap: 40px;
@@ -10,13 +11,17 @@ body{
     background-color: #fff;
     padding: 0 50px;
 }
-.logo{
-    display: none;
-}
 img{
     width: 40px;
     height: 40px;
 }
+
+/* navbar ends */
+.logo{
+    display: none;
+}
+
+/* side bar starts */
 .side-nav{
     display: grid;
     float: left;
@@ -25,14 +30,14 @@ img{
     padding: 0 30px;
     place-content: space-between;
 }
-.first-flex{
+.side-nav-first-flex{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
 }
-.second-flex{
+.side-nav-second-flex{
     display: flex;
     align-items: flex-end;
     margin-bottom: 30px;
@@ -50,9 +55,14 @@ img{
 .side-icon-div > p{
     font-size: 14px;
 }
+/* side bar ends */
+
+/* side bar for responsive view */
 .responsive-side-nav{
     display: none;
 }
+
+/* dashboard body */
 .dashboard-body{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -69,6 +79,8 @@ a{
     text-decoration: none;
     color: #000;
 }
+
+/* stack cards start */
 .stack{
     background: #fff;
     border: 1px solid #fff;
@@ -98,10 +110,9 @@ a{
 .node{
     width: 80px;
 }
-/* .python{ */
-    /* width: 200px; */
-/* } */
+/* stack cards end */
 
+/* performance card starts */
 .performance-card{
     display: flex;
     flex-direction: column;
@@ -175,8 +186,11 @@ a{
     height: 8px;
     border-radius: 10px;
   }
+/* performance card ends */
+
 
   @media screen and (max-width: 1060px){
+      /* side bar on responsive view starts */
     .responsive-side-nav{
         display: block;
         margin-top: 5px;
@@ -198,6 +212,8 @@ a{
     .res-side-icon-div > p{
         font-size: 14px;
     }
+    /* side bar on responsive view ends */
+
     .side-nav{
         display: none;
     }
